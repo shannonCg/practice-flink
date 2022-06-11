@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.shaice.flink;
+package com.shaice.flink.fraudDetectorTest;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -37,7 +37,6 @@ public class FraudDetector extends KeyedProcessFunction<Long, Transaction, Alert
 
 	private static final double SMALL_AMOUNT = 1.00;
 	private static final double LARGE_AMOUNT = 500.00;
-	private static final long ONE_MINUTE = 60 * 1000;
 
 	private Integer id;
 	private Map<Long,Integer> accountFraudTimes = new HashMap<>();
