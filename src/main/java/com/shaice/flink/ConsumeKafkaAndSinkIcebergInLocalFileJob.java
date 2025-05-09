@@ -7,7 +7,7 @@ import org.apache.flink.core.execution.CheckpointingMode;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 
-public class ConsumeKafkaAndSaveIcebergTableWithParquetFormatJob {
+public class ConsumeKafkaAndSinkIcebergInLocalFileJob {
     private static final int checkpointIntervalSec = 10;
 
     public void startJob() throws Exception {

@@ -11,7 +11,13 @@ public class StreamingJob {
 //        ConsumeKafkaAndSaveIcebergTableWithParquetFormatJob job = new ConsumeKafkaAndSaveIcebergTableWithParquetFormatJob();
 //        job.startJob();
 
-        ReadIcebergTableJob job = new ReadIcebergTableJob();
+//        ReadIcebergTableJob job = new ReadIcebergTableJob();
+//        job.startJob();
+
+//        ConsumeKafkaAndSinkRedisJob job = new ConsumeKafkaAndSinkRedisJob();
+//        job.startJob();
+
+        ReadRedisJob job = new ReadRedisJob();
         job.startJob();
     }
 }
